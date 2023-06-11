@@ -1,4 +1,5 @@
-# futbw
-自制卡牌游戏FUTBW
+# Eternal Battle
 
-做了一个粗糙的HTML5网页版本👉 https://FUTBW.com
+An Awesome Card Game
+
+Open Source Web Demo
