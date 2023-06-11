@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eternal Battle Open Web Demo</title>
+    <link rel="shortcut icon" href="image/futbwcomlogo.png">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.cn/css?family=Ubuntu" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="container">
+    <div class="container-sh">
+		<div class="text-center">
+			
+<h1 style="font-size: 48px;"><b>Eternal Battle</b></h1>
+<h2>An Awesome Card Game</h2>
+<h3>Open Source Web Demo</h3>
+<a href="https://docs.qq.com/doc/DS3lpQlphVlJiSklI">Eternal Battle 游戏规则</a><br>
+			
+    <div class="container-sh1" style="border: 1px solid orange;max-width: 350px;">
+    
+    <span>电脑 HP:</span><span id="pcshp">5</span>
+    <span> MP:</span><span id="pcsmp">4</span>
+    <span> AP:</span><span id="pcsap">3</span>
+    <span> Cards:</span><span id="pcscards">4</span>
+<br>
+<hr>
+<span>上张卡牌: </span><span id="pclatestcard"></span><br>
+<span>本回合出牌:</span><span id="pcroundcard"></span>
+<hr>
+<span id="cardlake">[卡池 还剩∞张]</span>
+<hr>
+<span>上张卡牌: </span><span id="youlatestcard"></span><br>
+<span>本回合出牌:</span><span id="youroundcard"></span>
+<hr>
+
+    <span>玩家 HP:</span><span id="yourhp">5</span>
+    <span> MP:</span><span id="yourmp">4</span>
+    <span> AP:</span><span id="yourap">3</span>
+    <span> Cards:</span><span id="yourcards">4</span>
+</div>
+    
+    <center>
+    <table border="0" style="border: 1px solid orange;padding: 1px 1px;border-collapse: collapse;">
+        <tr style="display:table;">
+            <td><span>卡槽1:</span></td>
+            <td><span id="cs1">空</span></td>
+            <td><span class="btn btn-light"  onclick="cs1()"  id="tempslot1">出牌</span></td>
+        </tr>
+        <tr style="display:table;">
+            <td><span>卡槽2:</span></td>
+            <td><span id="cs2">空</span></td>
+            <td><span class="btn btn-light"  onclick="cs2()"  id="tempslot2">出牌</span></td>
+        </tr>
+        <tr style="display:table;">
+            <td><span>卡槽3:</span></td>
+            <td><span id="cs3">空</span></td>
+            <td><span class="btn btn-light"  onclick="cs3()"  id="tempslot3">出牌</span></td>
+        </tr>
+        <tr style="display:table;">
+            <td><span>卡槽4:</span></td>
+            <td><span id="cs4">空</span></td>
+            <td><span class="btn btn-light"  onclick="cs4()"  id="tempslot4">出牌</span></td>
+        </tr>
+        <tr id="tempslot5" style="display:table;">
+            <td><span>卡槽5:</span></td>
+            <td><span id="cs5">空</span></td>
+            <td><span class="btn btn-light"  onclick="cs5()">出牌</span></td>
+        </tr>
+        <tr id="tempslot6" style="display:table;">
+            <td><span>卡槽6:</span></td>
+            <td><span id="cs6">空</span></td>
+            <td><span class="btn btn-light"  onclick="cs6()">出牌</span></td>
+        </tr>
+        <tr id="tempslot7" style="display:table;">
+            <td><span>卡槽7:</span></td>
+            <td><span id="cs7">空</span></td>
+            <td><span class="btn btn-light"  onclick="cs7()">出牌</span></td>
+        </tr>
+        <tr id="tempslot8" style="display:table;">
+            <td><span>卡槽8:</span></td>
+            <td><span id="cs8">空</span></td>
+            <td><span class="btn btn-light"  onclick="cs8()">出牌</span></td>
+        </tr>
+    </table>
+</center>
+<!--<span class="btn btn-dark" style="width:10%;" id="pass" onclick="zpass()">过</span> --><center>
+<span class="btn btn-light" style="width:23%;" id="howfirst" onclick="pcfirst()">电脑先开局</span>
+<span style="font-size: smaller;" id="howfirst2"">不知道应该谁先开局？推荐使用<a href="https://clappinggame.top">clappinggame.top</a>进行判定。</span></center>
+    	<span class="btn btn-light" style="width:20%;" id="ok" onclick="zok()">结束回合</span>
+			<br><span class="btn btn-light" style="width:20%;" onclick="start()">重新开始</span><br>
+      <!--      <p>This is the online web DEMO for FUTBW.<br>
+                Learn if you will like the game.<br><br>
+<p>FUTBW IS COMING SOON<br>
+    Don't know why...<br>
+    But a lot of people love this game.<br>
+    Who knows. You may love it too.
+</p><br>-->
+
+<!--<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=1294889328&auto=0&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=31563815&auto=0&height=66"></iframe>
+-->
+
+		<h4>Copyright © 2023 <strong>Eternal Battle</strong> , © 2023 <strong>OpenQuanta</strong> . All rights reserved .</h4>
+		
+		<!--<p>
+			<a href="https://github.com/cnzc/futbw"><img alt="GitHub stars" src="https://cdn.cloud.js.cool/shields/badge/View source code on GitHub-+-6699ff?style=flat&logo=github"></a>
+			<a href="https://github.com/cnzc/futbw/stargazers"><img alt="GitHub stars" src="https://cdn.cloud.js.cool/shields/github/stars/cnzc/futbw?style=flat"></a>
+			<a href="https://github.com/cnzc/futbw/network"><img alt="GitHub forks" src="https://cdn.cloud.js.cool/shields/github/forks/cnzc/futbw?style=flat"></a>
+			<a href="https://github.com/cnzc/futbw/blob/main/LICENSE"><img alt="GitHub license" src="https://cdn.cloud.js.cool/shields/github/license/cnzc/futbw?style=flat"></a>
+			<img alt="GitHub top language" src="https://cdn.cloud.js.cool/shields/github/languages/top/cnzc/futbw?style=flat">
+		</p>--><strong>
+            <a href="https://github.com/cnzc/futbw">GitHub开源代码</a> <a>|</a> <a href="http://beian.miit.gov.cn/">苏ICP备19022432号-2</a>
+     </strong>  <br><br>
+	</div>
+</div>
+</div>
+<script src="js/futbw.js"></script>
+</body>
+</html>
