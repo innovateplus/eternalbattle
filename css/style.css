@@ -121,9 +121,9 @@ float: left;
 }
 .btn-light {
   font-family: 'Ubuntu';
-  color: black;
-  background-color: orange;
-  border-color: orange;
+  color: white;
+  background-color: purple;
+  border-color: white;
 }
 .btn-success {
   color: #fff;
@@ -141,9 +141,9 @@ float: left;
   border-color: #0062cc;
 }
 .btn-light:hover {
-  color: black;
-  background-color: pink;
-  border-color: pink;
+  color: white;
+  background-color: plum;
+  border-color: white;
 }
 .btn-success:hover {
   color: #fff;
@@ -151,6 +151,6 @@ float: left;
   border-color: #1e7e34;
 }
 hr {
-  border: 0.5px solid yellow;	
+  border: 0.5px solid white;	
   overflow: visible;
 }
