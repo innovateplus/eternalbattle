@@ -395,7 +395,7 @@ function start()
 {
 	document.getElementById("howfirst").style.display="block";
 	document.getElementById("howfirst2").style.display="block";
-	document.getElementById("cardlake").innerHTML="欢迎来到 https://eternalbattle.cn.kaiyuan.fund\n";
+	document.getElementById("cardlake").innerHTML="欢迎来到 https://eternalbattle.futbw.com\n";
 	mp1 = 4, hp1 = 5, ap1 = 3, thp1 = 0, cardtop1 = 0;
 	mp2 = 6, hp2 = 10, ap2 = 3, thp2 = 0, cardtop2 = 0;
 	//
