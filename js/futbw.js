@@ -247,7 +247,7 @@ function showcards()
 		if (card1[i] == 1)
 		ct1[i]="剑击 (1AP 1DMG)[攻]";
 		else if (card1[i] == 2)
-		ct1[i]="智慧 (2MP 1Card)[法]";
+		ct1[i]="智慧 (+2MP 1Card)[法]";
 		else if (card1[i] == 3)
 		ct1[i]="重击 (2AP 2DMG)[攻]";
 		else if (card1[i] == 4)
