@@ -4,6 +4,4 @@
 
 Eternal Battle is an awesome card game
 
-https://innovateplus.github.io/eternalbattle
-
-上可以在线体验 Open Source Web Demo 版
+访问 https://innovateplus.github.io/eternalbattle 可以在线体验 Open Source Web Demo 版
