@@ -94,7 +94,7 @@ function broadcast(w,p,c) {//广播信息(信息 1.出牌2.出牌失败3.游戏�
 		}
 		else if(p==2)
 		{
-			plc.innerHTML="出现Bug,联系A@clapq.com反馈";
+			plc.innerHTML="出现Bug,Email联系eb@cloud.js.cool反馈";
 		}
 	}
 	else if(w==3)
@@ -247,7 +247,7 @@ function showcards()
 		if (card1[i] == 1)
 		ct1[i]="剑击 (1AP 1DMG)[攻]";
 		else if (card1[i] == 2)
-		ct1[i]="智慧 (+2MP 1Card)[法]";
+		ct1[i]="智慧 (2MP 1Card)[法]";
 		else if (card1[i] == 3)
 		ct1[i]="重击 (2AP 2DMG)[攻]";
 		else if (card1[i] == 4)
@@ -395,7 +395,7 @@ function start()
 {
 	document.getElementById("howfirst").style.display="block";
 	document.getElementById("howfirst2").style.display="block";
-	document.getElementById("cardlake").innerHTML="欢迎来到 https://eternalbattle.futbw.com\n";
+	document.getElementById("cardlake").innerHTML="欢迎来到 Eternal Battle 网页版\n";
 	mp1 = 4, hp1 = 5, ap1 = 3, thp1 = 0, cardtop1 = 0;
 	mp2 = 6, hp2 = 10, ap2 = 3, thp2 = 0, cardtop2 = 0;
 	//
