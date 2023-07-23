@@ -9,3 +9,7 @@ Eternal Battle is an awesome card game
 游戏内容还在完善中...
 
 访问 www.eternalbattle.link 体验最新测试版EB
+
+游戏教程文档已编写，还在完善中...
+
+教程 https://docs.qq.com/doc/DS3lpQlphVlJiSklI
